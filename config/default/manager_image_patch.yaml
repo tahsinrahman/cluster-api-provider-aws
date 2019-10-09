@@ -8,5 +8,6 @@ spec:
     spec:
       containers:
       # Change the value of image field below to your controller image URL
-      - image: gcr.io/k8s-staging-cluster-api-aws/cluster-api-aws-controller:latest
+      # TODO: revert
+      - image: tahsin/aws-controller-amd64:webhook-4
         name: manager

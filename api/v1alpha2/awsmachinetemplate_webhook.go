@@ -37,7 +37,7 @@ var _ webhook.Validator = &AWSMachineTemplate{}
 
 // ValidateCreate implements webhook.Validator so a webhook will be registered for the type
 func (r *AWSMachineTemplate) ValidateCreate() error {
-	return nil
+	return errors.New("hello")
 }
 
 // ValidateUpdate implements webhook.Validator so a webhook will be registered for the type

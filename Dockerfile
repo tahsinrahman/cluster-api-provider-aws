@@ -40,5 +40,4 @@ RUN CGO_ENABLED=0 GOOS=linux GOARCH=${ARCH} \
 FROM gcr.io/distroless/static:latest
 WORKDIR /
 COPY --from=builder /workspace/manager .
-USER nobody
 ENTRYPOINT ["/manager"]
